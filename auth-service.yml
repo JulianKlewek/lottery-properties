@@ -1,0 +1,35 @@
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lotto
+    username: root
+    password: example
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: update
+
+jwt:
+  expiration:
+    minutes: 5
+    seconds: 60
+    millis: 1000
+    refreshOffset: 10
+
+springdoc:
+  swagger-ui:
+    path: /auth-service/swagger-ui.html
+  api-docs:
+    path: /auth-service/v3/api-docs
