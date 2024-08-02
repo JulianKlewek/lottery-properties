@@ -32,3 +32,13 @@ springdoc:
     path: /numbers-generator/swagger-ui.html
   api-docs:
     path: /numbers-generator/v3/api-docs
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
