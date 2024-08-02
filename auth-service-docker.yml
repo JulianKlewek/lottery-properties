@@ -18,7 +18,7 @@ spring:
 
 jwt:
   expiration:
-    minutes: 10
+    minutes: 6
     seconds: 60
     millis: 1000
     refreshOffset: 10
