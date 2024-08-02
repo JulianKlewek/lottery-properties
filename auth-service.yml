@@ -26,3 +26,13 @@ springdoc:
     path: /auth-service/swagger-ui.html
   api-docs:
     path: /auth-service/v3/api-docs
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
