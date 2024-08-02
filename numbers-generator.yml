@@ -16,7 +16,7 @@ spring:
 lotto:
   numbers:
     minimumNumber: 1
-    maximumNumber: 50
+    maximumNumber: 49
     amountOfNumbers: 6
   time:
     drawDayOfWeek: 5
