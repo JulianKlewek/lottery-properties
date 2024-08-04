@@ -15,6 +15,12 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, refresh
+
 lotto:
   number-generator:
     service:
