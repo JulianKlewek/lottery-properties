@@ -22,7 +22,7 @@ queues:
 
 email:
   sender:
-    address: ${{ secrets.EMAIL_HOST_ADDRESS }}
+    address: ${EMAIL_HOST_ADDRESS}
 
 logging:
   level:
