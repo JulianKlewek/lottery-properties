@@ -5,9 +5,9 @@ spring:
   application:
     name: mail-service
   mail:
-    host: ${EMAIL_HOST}
-    username: ${EMAIL_HOST_ADDRESS}
-    password: ${EMAIL_HOST_PASSWORD}
+    host: EMAIL_HOST
+    username: EMAIL_HOST_ADDRESS
+    password: EMAIL_HOST_PASSWORD
     properties:
       mail:
         smtp:
@@ -22,7 +22,7 @@ queues:
 
 email:
   sender:
-    address: ${EMAIL_HOST_ADDRESS}
+    address: EMAIL_HOST_ADDRESS
 
 logging:
   level:
