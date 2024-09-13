@@ -15,7 +15,8 @@ spring:
           starttls:
             enabled: true
             required: true
-
+  rabbitmq:
+    host: rabbitmq
 queues:
   names:
     account-created-event: email.service
