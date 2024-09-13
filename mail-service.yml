@@ -4,11 +4,6 @@ server:
 spring:
   application:
     name: mail-service
-  config:
-    import: optional:file:.env[.properties]
-  cloud:
-    config:
-      enabled: false
   mail:
     host: ${EMAIL_HOST}
     username: ${EMAIL_HOST_ADDRESS}
