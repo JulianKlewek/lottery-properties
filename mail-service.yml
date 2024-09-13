@@ -15,6 +15,8 @@ spring:
           starttls:
             enabled: true
             required: true
+  rabbitmq:
+    host: rabbitmq
 
 queues:
   names:
