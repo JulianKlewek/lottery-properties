@@ -29,3 +29,9 @@ logging:
     pl:
       lotto: debug
     root: info
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, refresh
