@@ -21,7 +21,7 @@ spring:
         - id: LOTTO-ENGINE-ROUTE
           uri: lb://lotto-engine
           predicates:
-            - Path=/lottery/**,/result/**
+            - Path=/lottery/**,/result/**,/results/**
           filters:
             - AuthenticationFilter
         - id: LOTTO-ENGINE-swagger-ROUTE
