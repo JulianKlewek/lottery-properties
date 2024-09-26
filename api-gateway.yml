@@ -29,6 +29,10 @@ spring:
           predicates:
             - Path=/lotto-engine/v3/api-docs
             - Method=GET
+        - id: NUMBERS-GENERATOR
+          uri: lb://numbers-generator
+          predicates:
+            - Path=/winning-numbers/**
         - id: NUMBERS-GENERATOR-swagger-ROUTE
           uri: lb://numbers-generator
           predicates:
