@@ -15,8 +15,8 @@ spring:
           starttls:
             enabled: true
             required: true
-  rabbitmq:
-    host: rabbitmq
+  # rabbitmq:
+  #   host: rabbitmq
 
 queues:
   names:
@@ -24,7 +24,7 @@ queues:
 
 email:
   sender:
-    address: ${EMAIL_HOST_ADDRESS}
+    address: jkexamplelott@gmail.com
 
 logging:
   level:
