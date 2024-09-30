@@ -5,9 +5,9 @@ spring:
   application:
     name: mail-service
   mail:
-    host: EMAIL_HOST
-    username: EMAIL_HOST_ADDRESS
-    password: EMAIL_HOST_PASSWORD
+    host: smtp.gmail.com
+    username: jkexamplelott@gmail.com
+    password: roti gkki qqxq gkwq
     properties:
       mail:
         smtp:
