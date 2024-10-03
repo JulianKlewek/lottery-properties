@@ -48,3 +48,9 @@ management:
     web:
       exposure:
         include: "*"
+
+logging:
+  level:
+    pl:
+      lotto: debug
+    root: info
