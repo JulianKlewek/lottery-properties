@@ -17,6 +17,7 @@ spring:
             required: true
   rabbitmq:
     host: rabbitmq
+
 queues:
   names:
     account-created-event: email.service
