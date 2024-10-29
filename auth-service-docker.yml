@@ -15,6 +15,18 @@ spring:
         ddl-auto: update
         temp:
         use_jdbc_metadata_defaults: false
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+email:
+  sender:
+    queue: email.service
+    exchange: auth.exchange
+    routing-key:
+      registration: email.sender.registration
 
 jwt:
   expiration:
@@ -22,6 +34,15 @@ jwt:
     seconds: 60
     millis: 1000
     refreshOffset: 10
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 springdoc:
   swagger-ui:

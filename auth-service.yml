@@ -13,6 +13,18 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         ddl-auto: update
+    rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+email:
+  sender:
+    queue: email.service
+    exchange: auth.exchange
+    routing-key:
+      registration: email.sender.registration
 
 jwt:
   expiration:
@@ -36,3 +48,9 @@ management:
     web:
       exposure:
         include: "*"
+
+logging:
+  level:
+    pl:
+      lotto: debug
+    root: info
